@@ -215,9 +215,9 @@ end
 Tabs.Main:AddToggle("AutoFarmToggle", {
     Title = "Auto Farm",
     Default = false,
-    Callback = function(value)
-        getgenv().AutoFarm = value
-        if value then
+    Callback = function(enabled)
+        getgenv().AutoFarm = enabled
+        if enabled then
             AutoFarmLogic()
         end
     end
@@ -226,9 +226,9 @@ Tabs.Main:AddToggle("AutoFarmToggle", {
 Tabs.Main:AddToggle("FastAttackToggle", {
     Title = "Fast Attack",
     Default = false,
-    Callback = function(value)
-        getgenv().FastAttackEnabled = value
-        if value then
+    Callback = function(enabled)
+        getgenv().FastAttackEnabled = enabled
+        if enabled then
             FastAttackLogic()
         end
     end
@@ -237,9 +237,9 @@ Tabs.Main:AddToggle("FastAttackToggle", {
 Tabs.Main:AddToggle("BringMobToggle", {
     Title = "Bring Mob",
     Default = false,
-    Callback = function(value)
-        getgenv().BringMob = value
-        if value then
+    Callback = function(enabled)
+        getgenv().BringMob = enabled
+        if enabled then
             BringMobLogic()
         end
     end
@@ -248,9 +248,9 @@ Tabs.Main:AddToggle("BringMobToggle", {
 Tabs.Main:AddToggle("AutoHakiToggle", {
     Title = "Auto Haki",
     Default = false,
-    Callback = function(value)
-        getgenv().AUTOHAKI = value
-        if value then
+    Callback = function(enabled)
+        getgenv().AUTOHAKI = enabled
+        if enabled then
             AutoHakiLogic()
         end
     end
@@ -259,9 +259,9 @@ Tabs.Main:AddToggle("AutoHakiToggle", {
 Tabs.Main:AddToggle("UpMeleeToggle", {
     Title = "Up Melee",
     Default = false,
-    Callback = function(value)
-        getgenv().UpMelee = value
-        if value then
+    Callback = function(enabled)
+        getgenv().UpMelee = enabled
+        if enabled then
             UpMeleeLogic()
         end
     end
